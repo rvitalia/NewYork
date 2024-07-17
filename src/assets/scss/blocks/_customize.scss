@@ -1,0 +1,91 @@
+.customize {
+    // height: 100vh;
+    min-height: 380px;
+    position: relative;
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 3;
+        content: '';
+        width: 100%;
+        height: 100vh;
+        max-height: 115px;
+        @include bg-cover;
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%221440%22%20height%3D%2285%22%20viewBox%3D%220%200%201440%2085%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200H1500V25.5L0%2085V0Z%22%20fill%3D%22black%22%2F%3E%3C%2Fsvg%3E");
+    }
+
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+        content: '';
+        width: 100%;
+        height: 100vh;
+        max-height: 115px;
+        @include bg-cover;
+        background-image: url("data:image/svg+xml,%3Csvg%20width=%221440%22%20height=%2285%22%20viewBox=%220%200%201440%2085%22%20fill=%22none%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%20%20%20%3Cpath%20d=%22M1500%2085H0V59.5L1500%200V85Z%22%20fill=%22black%22%20/%3E%20%3C/svg%3E");
+    }
+
+    & .img-wrap {
+        width: 100%;
+        position: relative;
+
+        &::after {
+            content: '';
+            inset: 0;
+            position: absolute;
+            z-index: 1;
+            background: linear-gradient(90deg, #fff50f 0%, rgba(255, 245, 15, 0) 100%);
+
+        }
+
+        & img {
+            max-height: 380px;
+            width: 100%;
+            position: relative;
+            z-index: 4;
+        }
+    }
+
+    & .customize_inner {
+        position: absolute;
+        inset: 0;
+        z-index: 5;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & p {
+        margin: 0;
+        font-family: var(--font4);
+        font-weight: 400;
+        font-size: 89px;
+        line-height: 98%;
+        text-align: center;
+        color: #000;
+        transform: rotate(-2deg);
+        max-width: 1233px;
+        position: relative;
+        z-index: 5;
+        display: inline-block;
+        // background: linear-gradient(to right, white 0%, #FFF50F 100%);
+        text-shadow:
+            1px 1px 0 #FFF,
+            /* белая обводка */
+            -1px 1px 0 #FFF,
+            1px -1px 0 #FFF,
+            -1px -1px 0 #FFF,
+            1px 1px 6px #FFF,
+            /* размер обводки 6px */
+            -1px 1px 6px #FFF,
+            1px -1px 6px #FFF,
+            -1px -1px 6px #FFF;
+    }
+}

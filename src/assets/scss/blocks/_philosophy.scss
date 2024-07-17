@@ -1,0 +1,26 @@
+.philosophy {
+    padding: 80px 0 120px;
+    background: #000;
+
+    & .project_title{
+        margin-bottom: 39px;
+    }
+}
+
+.philosophy_text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #fff;
+    margin: 0;
+
+    & + &{
+        margin-top: 30px;
+    }
+
+    & a {
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+    }
+}

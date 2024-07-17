@@ -1,0 +1,56 @@
+.hero {
+    height: 100vh;
+    max-height: 992px;
+    @include bg-cover;
+    position: relative;
+    padding-bottom: 75px;
+
+    & .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 35px;
+        height: 100%;
+
+        & * {
+            position: relative;
+            z-index: 1;
+        }
+
+        & .flex-row {
+            gap: 25px;
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 100%;
+        min-height: 791px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    }
+}
+
+.hero_title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: clamp(37px, 4vw, 52px);
+    color: #fff;
+    max-width: 886px;
+    margin: 0;
+}
+
+.hero_text {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    color: #fff;
+    display: block;
+    margin: 0;
+    max-width: 1229px;
+}

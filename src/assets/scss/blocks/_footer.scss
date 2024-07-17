@@ -1,0 +1,109 @@
+.footer {
+    padding-top: 35px;
+    padding-bottom: 75px;
+    background: #000;
+    width: 100%;
+
+    & .container {
+
+        & .flex-row {
+            &:first-of-type {
+                justify-content: space-between;
+                gap: 30px;
+                margin-bottom: 100px;
+
+                & .flex-column {
+
+                    &:first-of-type {
+                        gap: 28px;
+                        align-items: center;
+                    }
+
+                    &:last-of-type {
+                        gap: 46px;
+                    }
+                }
+            }
+            &.footer_copyright {
+                padding-top: 60px;
+                gap: 35px;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                margin-bottom: 0;
+            
+                & a {
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #9c9c9c;
+                }
+            }
+        }
+
+        & .grid-row {
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: clamp(30px, 8vw, 139px);
+            padding-bottom: 65px;
+            border-bottom: 2px solid #333;
+        }
+    }
+}
+
+.footer_logo {
+    & img {
+        max-width: 120px;
+        max-height: 80px;
+    }
+}
+
+.footer_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 162%;
+    color: #fff;
+    max-width: 470px;
+}
+
+.footer_tel {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 28px;
+    color: #fff;
+}
+
+.footer_social {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    & li a {
+        font-weight: 400;
+        font-size: 16px;
+        color: #c6baaa;
+    }
+
+    & li.menu_title a {
+        font-weight: 700;
+        font-size: 16px;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+
+        &:after {
+            content: '';
+            width: 70px;
+            height: 10px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-image: url('data:image/svg+xml,%3Csvg%20width=%2270%22%20height=%229%22%20viewBox=%220%200%2070%209%22%20fill=%22none%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%20%20%20%3Cpath%20d=%22M4%200H70L66%209H0L4%200Z%22%20fill=%22white%22%20/%3E%20%3C/svg%3E');
+            display: inline-flex;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+// @import 'vendor/reset';
+@import 'blocks/vars';
+@import 'mixins';
+// @import "./vendor/animate";
+
+
+@import 'fonts';
+@import 'settings';
+
+
+html,body{
+  height: 100%;
+  color: #000;
+   margin: 0;
+   font-family: var(--font-family);
+   background-color: #fff;
+}
+
+.main{
+  height: 100%;
+  flex: 1 0 auto; 
+}
+/* Для всех браузеров, поддерживающих Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Ширина скроллбара */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Цвет фона трека скроллбара */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Цвет ползунка скроллбара */
+      border-radius: 16px; /* Закругление ползунка */
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Цвет ползунка скроллбара при наведении */
+}
+
+/* Для Firefox */
+html, * {
+  scrollbar-width: thin; /* Устанавливает узкий скроллбар */
+  scrollbar-color: #888 #f1f1f1; /* Цвета ползунка и трека */
+}
+
+/* Для Internet Explorer и Edge */
+body, * {
+  -ms-overflow-style: scrollbar; /* Настраивает стиль скроллбара */
+}
+
+
+// ======blocks=========
+
+@import 'blocks/container';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/customize';
+@import 'blocks/philosophy';
+@import 'blocks/call';
+@import 'blocks/services';
+@import 'blocks/projects';
+@import 'blocks/footer';
+
+
+
+
+
+
