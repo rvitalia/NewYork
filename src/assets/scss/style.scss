@@ -50,6 +50,11 @@ body, * {
   -ms-overflow-style: scrollbar; /* Настраивает стиль скроллбара */
 }
 
+body:has(.header_mobile.active){
+  overflow: hidden;
+  padding-right: var(--scrollbar-width);
+}
+
 
 // ======blocks=========
 

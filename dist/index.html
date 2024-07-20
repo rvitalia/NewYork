@@ -16,10 +16,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Italiana&family=Just+Me+Again+Down+Here&family=Limelight&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>New York</title>
-    
-    
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>New York</title></head>
 
 <body>
     <div class="page">
@@ -41,11 +40,35 @@
                     </nav>
                     <div class="flex-row">
                         <a href="" class="header_mess">
-                            <img src="../assets/images/header/WhatsApp.svg" alt="WhatsApp" width="26" height="26">
+                            <img src="./assets/images/header/WhatsApp.svg" alt="WhatsApp" width="26" height="26">
                         </a>
                         <a href="tel:+12125551234" class="header_tel">+1 (212) 555-1234</a>
-                    </div>            
+                    </div>  
+                    <div class="burger-menu" id="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>          
                 </div>
+            </div>
+            <div class="header_mobile" style="background-image: url(./assets/images/header/Background.png);">
+                <ul class="list-reset header_mobile_list">
+                    <li><a href="">
+                        <img src="./assets/images/header/logo.svg" alt="logo" width="174" height="120">
+                    </a></li>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">SERVICES</a></li>
+                    <li><a href="">PRICING</a></li>
+                    <li><a href="">PORTFOLIO</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    <li>
+                        <a href="" class="header_mess">
+                            <img src="./assets/images/header/WhatsApp.svg" alt="WhatsApp" width="26" height="26">
+                        </a>
+                        <a href="tel:+12125551234" class="header_tel">+1 (212) 555-1234</a>
+                    </li>
+                </ul>
             </div>
         </header>
         <main class="main">
@@ -53,34 +76,45 @@
             
             <section class="hero section" style="background-image: url(./assets/images/hero/image79741.png);">
                 <div class="container">
-                    <h1 class="hero_title">New York Web Development, Web Apps & Digital Marketing</h1>
+                    <h1 class="hero_title">New York Web Development, <br> Web Apps & Digital Marketing</h1>
                     <div class="flex-row">
                         <a href="tel:" class="project_link colors">CALL +1 (212) 555-1234</a>
                         <a href="" class="project_link white">CONTACT US</a>
                     </div>
                     <p class="hero_text">
-                        Welcome to empstateweb.com. We are a small New York web development company specializing in the creation of practical and affordable small business websites, web-based Internet applications (Web Apps), and other digital marketing solutions that help small businesses like yours to thrive online.
+                        Welcome to empstateweb.com. We are a small New York web development company specializing in the creation of
+                        practical and affordable small business websites, web-based Internet applications (Web Apps), and other
+                        digital marketing solutions that help small businesses like yours to thrive online.
                     </p>
                 </div>
             </section>
             
             <section class="section customize">
                 <div class="img-wrap">
-                    <img src="./assets/images/customize/Vector210.png" alt="" class="customize_background_first">
+                    <img src="./assets/images/customize/Vector210.png" alt="" class="customize_background_first" srcset="./assets/images/customize/Vector210.png 1200w, 
+                    ./assets/images/customize/vectormobile.svg 576w">
                 </div>
                 <div class="container">
                     <div class="customize_inner">
-                        <p class="gradient-text">We customize our web development services 
+                        <p class="gradient-text">We customize our web development services <br>
                             to fit your specific needs.</p>
                     </div>
-                </div>    
+                </div>
             </section>
             
             <section class="section philosophy">
                 <div class="container">
                     <h2 class="project_title">Our Web Design Philosophy</h2>
-                    <p class="philosophy_text">Founded in 1999, iSatisfy.com remains dedicated to a simple business philosophy that continues to guide us in every project we undertake. We refer to it as 'pervasive integrity'. In a nutshell, this philosophy means that we strive for integrity in everything we do and we're always guided by what is best for our clients... even if it means referring business to another <a href="https://www.isatisfy.com/web-design/"> Miami Web Design</a> firm.</p>
-                    <p class="philosophy_text">We're not a 'one-size-fits-all' digital agency. We have an unwavering dedication to providing the highest level of  laser-focused professional services to our clients. Our unique blend of consulting, technical and design expertise allows us to be nimble and responsive to you and your company's unique set of business needs. If you are searching for web site design Miami, you need look no further. We're ready to meet all of your new web design and web marketing needs.</p>
+                    <p class="philosophy_text">Founded in 1999, iSatisfy.com remains dedicated to a simple business philosophy that
+                        continues to guide us in every project we undertake. We refer to it as 'pervasive integrity'. In a nutshell,
+                        this philosophy means that we strive for integrity in everything we do and we're always guided by what is
+                        best for our clients... even if it means referring business to another <a
+                            href="https://www.isatisfy.com/web-design/"> Miami Web Design</a> firm.</p>
+                    <p class="philosophy_text">We're not a 'one-size-fits-all' digital agency. We have an unwavering dedication to
+                        providing the highest level of  laser-focused professional services to our clients. Our unique blend of
+                        consulting, technical and design expertise allows us to be nimble and responsive to you and your company's
+                        unique set of business needs. If you are searching for web site design Miami, you need look no further.
+                        We're ready to meet all of your new web design and web marketing needs.</p>
                 </div>
             </section>
             
@@ -88,7 +122,7 @@
                 <div class="call_inner">
                     <div class="container">
                         <div class="flex-row">
-                            <p class="call_inner_text">Give us a call and we'll let you know  <br>
+                            <p class="call_inner_text">Give us a call and we'll let you know <br>
                                 if we're a good fit for you and your business</p>
                             <div class="project_share">
                                 <a href="" class="project_share_mess">
@@ -98,7 +132,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="call_inner_mask" src="./assets/images/call/Maskgroup.svg" alt="mask" width="1420" height="146">
+                    <!-- <img class="call_inner_mask" src="./assets/images/call/Maskgroup.svg" alt="mask" width="1420" height="146"> -->
                 </div>
             </section>
             
@@ -108,115 +142,163 @@
                     <div class="grid-row">
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Miami Web Design and Development</h4>
-                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development company specializing in the creation of practical and affordable small business websites, web-based Internet applications (Web Apps), and other digital marketing solutions that help small businesses like yours to thrive online.</p>
+                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development
+                                company specializing in the creation of practical and affordable small business websites, web-based
+                                Internet applications (Web Apps), and other digital marketing solutions that help small businesses
+                                like yours to thrive online.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Web App Development</h4>
-                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
+                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web
+                                apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Miami Web Design and Development</h4>
-                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development company specializing in the creation of practical and affordable small business websites, web-based Internet applications (Web Apps), and other digital marketing solutions that help small businesses like yours to thrive online.</p>
+                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development
+                                company specializing in the creation of practical and affordable small business websites, web-based
+                                Internet applications (Web Apps), and other digital marketing solutions that help small businesses
+                                like yours to thrive online.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Web App Development</h4>
-                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
+                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web
+                                apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Miami Web Design and Development</h4>
-                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development company specializing in the creation of practical and affordable small business websites, web-based Internet applications (Web Apps), and other digital marketing solutions that help small businesses like yours to thrive online.</p>
+                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development
+                                company specializing in the creation of practical and affordable small business websites, web-based
+                                Internet applications (Web Apps), and other digital marketing solutions that help small businesses
+                                like yours to thrive online.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Web App Development</h4>
-                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
+                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web
+                                apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Miami Web Design and Development</h4>
-                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development company specializing in the creation of practical and affordable small business websites, web-based Internet applications (Web Apps), and other digital marketing solutions that help small businesses like yours to thrive online.</p>
+                            <p class="services_item_text">Welcome to empstateweb.com. We are a small New York web development
+                                company specializing in the creation of practical and affordable small business websites, web-based
+                                Internet applications (Web Apps), and other digital marketing solutions that help small businesses
+                                like yours to thrive online.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Web App Development</h4>
-                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
+                            <p class="services_item_text">Custom database-driven website applications, E-Commerce websites, web
+                                apps, Software as a Service (Saas) system design and development. Local Miami-based developers.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                         <div class="services_item">
                             <div class="img-wrap">
-                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30" loading="lazy">
+                                <img src="./assets/images/services/svg-fancy_icon-256-5.svg" alt="icon" width="36" height="30"
+                                    loading="lazy">
                             </div>
                             <h4 class="services_item_title">Website Hosting</h4>
-                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers with solid state digital drives and continuous off-site data backup/protection. Miami Website Hosting.</p>
+                            <p class="services_item_text">Fully managed website hosting services. High-speed (8 processor) servers
+                                with solid state digital drives and continuous off-site data backup/protection. Miami Website
+                                Hosting.</p>
                         </div>
                     </div>
                     <div class="flex-row">
@@ -228,43 +310,85 @@
             
             <section class="projects section">
                 <div class="container">
-                    <h2 class="project_title black">Our latest Miami web design projects...</h2>
-                    <div class="grid-row">
-                        <div class="projects_item">
-                            <span>Web Design / SAAS Integration</span>
-                            <div class="img-wrap">
-                                <img src="./assets/images/projects/image79748.png" alt="" width="480" height="297" loading="lazy">
+                    <h2 class="project_title black">Our latest Miami web design projects ...</h2>
+                    <div class="projects_fluid">
+                        <div class="swiper swiper-projects">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="projects_item">
+                                        <span>Web Design / SAAS Integration</span>
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/projects/image79748.png" alt="" width="480" height="297" loading="lazy">
+                                        </div>
+                                        <div class="flex-column">
+                                            <h4 class="projects_item_title">Level One by Lagree</h4>
+                                            <p class="project_item_text">Level One by Lagree is a new fitness facility located in South Beach.
+                                                They offer both indoor and outdoor training classes utilizing the Lagree Fitness Method. We
+                                                helped Level One complete their stalled project, test booking engines and integrate their chosen
+                                                SAAS booking engine.</p>
+                                            <a href="" class="projects_item_link">www.LevelOneByLagree.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="swiper-slide">
+                                    <div class="projects_item">
+                                        <span>Web Design / SAAS Integration</span>
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/projects/image79749.png" alt="" width="480" height="297" loading="lazy">
+                                        </div>
+                                        <div class="flex-column">
+                                            <h4 class="projects_item_title">The Pearce Foundation</h4>
+                                            <p class="project_item_text">Level One by Lagree is a new fitness facility located in South Beach.
+                                                They offer both indoor and outdoor training classes utilizing the Lagree Fitness Method. We
+                                                helped Level One complete their stalled project, test booking engines and integrate their chosen
+                                                SAAS booking engine.</p>
+                                            <a href="" class="projects_item_link">www.LevelOneByLagree.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="swiper-slide">
+                                    <div class="projects_item">
+                                        <span>Web Design / SAAS Integration</span>
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/projects/image79750.png" alt="" width="480" height="297" loading="lazy">
+                                        </div>
+                                        <div class="flex-column">
+                                            <h4 class="projects_item_title">The Pearce Foundation</h4>
+                                            <p class="project_item_text">Level One by Lagree is a new fitness facility located in South Beach.
+                                                They offer both indoor and outdoor training classes utilizing the Lagree Fitness Method. We
+                                                helped Level One complete their stalled project, test booking engines and integrate their chosen
+                                                SAAS booking engine.</p>
+                                            <a href="" class="projects_item_link">www.LevelOneByLagree.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="projects_item">
+                                        <span>Web Design / SAAS Integration</span>
+                                        <div class="img-wrap">
+                                            <img src="./assets/images/projects/image79750.png" alt="" width="480" height="297" loading="lazy">
+                                        </div>
+                                        <div class="flex-column">
+                                            <h4 class="projects_item_title">The Pearce Foundation</h4>
+                                            <p class="project_item_text">Level One by Lagree is a new fitness facility located in South Beach.
+                                                They offer both indoor and outdoor training classes utilizing the Lagree Fitness Method. We
+                                                helped Level One complete their stalled project, test booking engines and integrate their chosen
+                                                SAAS booking engine.</p>
+                                            <a href="" class="projects_item_link">www.LevelOneByLagree.com</a>
+                                        </div>
+                                    </div>
+                                </div>
+                    
                             </div>
-                            <div class="flex-column">
-                                <h4 class="projects_item_title">Level One by Lagree</h4>
-                                <p class="project_item_text">Level One by Lagree is a new fitness facility located in South Beach. They offer both indoor and outdoor training classes utilizing the Lagree Fitness Method. We helped Level One complete their stalled project, test booking engines and integrate their chosen SAAS booking engine.</p>
-                                <a href="" class="projects_item_link">www.LevelOneByLagree.com</a>
-                            </div>
-                        </div>
-                        <div class="projects_item">
-                            <span>Web Design / SAAS Integration</span>
-                            <div class="img-wrap">
-                                <img src="./assets/images/projects/image79749.png" alt="" width="480" height="297" loading="lazy">
-                            </div>
-                            <div class="flex-column">
-                                <h4 class="projects_item_title">The Pearce Foundation</h4>
-                                <p class="project_item_text">Level One by Lagree is a new fitness facility located in South Beach. They offer both indoor and outdoor training classes utilizing the Lagree Fitness Method. We helped Level One complete their stalled project, test booking engines and integrate their chosen SAAS booking engine.</p>
-                                <a href="" class="projects_item_link">www.LevelOneByLagree.com</a>
-                            </div>
-                        </div>
-                        <div class="projects_item">
-                            <span>Web Design / SAAS Integration</span>
-                            <div class="img-wrap">
-                                <img src="./assets/images/projects/image79750.png" alt="" width="480" height="297" loading="lazy">
-                            </div>
-                            <div class="flex-column">
-                                <h4 class="projects_item_title">The Pearce Foundation</h4>
-                                <p class="project_item_text">Level One by Lagree is a new fitness facility located in South Beach. They offer both indoor and outdoor training classes utilizing the Lagree Fitness Method. We helped Level One complete their stalled project, test booking engines and integrate their chosen SAAS booking engine.</p>
-                                <a href="" class="projects_item_link">www.LevelOneByLagree.com</a>
-                            </div>
+                 
+                            <!-- <div class="swiper-scrollbar"></div> -->
                         </div>
                     </div>
-                    <a href="" class="projects_more">SEE MORE WEB DESIGN PROJECTS  >></a>
+                    <a href="" class="projects_more">SEE MORE WEB DESIGN PROJECTS >></a>
                 </div>
             </section>
             
@@ -281,7 +405,7 @@
                             </div>
                         </div>
                     </div>
-                    <img class="call_inner_mask" src="./assets/images/call/Maskgroup.svg" alt="mask" width="1420" height="146">
+                    <!-- <img class="call_inner_mask" src="./assets/images/call/Maskgroup.svg" alt="mask" width="1420" height="146"> -->
                 </div>
             </section>
         </main>
@@ -358,7 +482,67 @@
             </div>
         </footer>
     </div>
-    <script src="assets/js/app.js"></script>
-</body>
-</html>
+    <!-- <script src="assets/js/app.js"></script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const burgerMenu = document.getElementById('burger-menu');
+            const headerMobile = document.querySelector('.header_mobile');
 
+            burgerMenu.addEventListener('click', function () {
+                burgerMenu.classList.toggle('active');
+                headerMobile.classList.toggle('active');
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // получаем скролл
+            const scrollbarMeasure = document.createElement('div');
+            scrollbarMeasure.style.width = '100px';
+            scrollbarMeasure.style.height = '100px';
+            scrollbarMeasure.style.overflow = 'scroll';
+            scrollbarMeasure.style.position = 'absolute';
+            scrollbarMeasure.style.top = '-9999px';
+
+            document.body.appendChild(scrollbarMeasure);
+            // Вычисление ширины полосы прокрутки
+            const scrollbarWidth = scrollbarMeasure.offsetWidth - scrollbarMeasure.clientWidth;
+            // Удаление измерительного элемента
+            document.body.removeChild(scrollbarMeasure);
+            // Установка CSS-переменной
+            document.documentElement.style.setProperty('--scrollbar-width', `${scrollbarWidth}px`);
+            document.body.classList.add('body-without-scroll');
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            var swiper = new Swiper('.swiper-projects', {
+                slidesPerView: 1,
+                spaceBetween: 60,
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                //     hide: false,
+                // },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 60,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 60,
+                    },
+                    1024: {
+                        slidesPerView: 2.5,
+                        spaceBetween: 60,
+                    },
+                    1440: {
+                        slidesPerView: 3.5,
+                        spaceBetween: 60,
+                    }
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

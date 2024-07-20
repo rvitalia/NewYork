@@ -1,5 +1,5 @@
 .philosophy {
-    padding: 80px 0 120px;
+    padding: clamp(10px, 4.3vw, 80px) 0 clamp(20px , 6vw, 120px);
     background: #000;
 
     & .project_title{
@@ -10,7 +10,7 @@
 .philosophy_text {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(20px, 1.5vw, 30px);
     line-height: 125%;
     color: #fff;
     margin: 0;

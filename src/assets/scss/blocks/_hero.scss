@@ -3,7 +3,15 @@
     max-height: 992px;
     @include bg-cover;
     position: relative;
-    padding-bottom: 75px;
+    padding-bottom: clamp(10px, 3.5vw,  75px);
+
+
+    @include mobile{
+        min-height: 974px;
+        max-width: unset;
+    }
+
+
 
     & .container {
         display: flex;
@@ -19,6 +27,7 @@
 
         & .flex-row {
             gap: 25px;
+            flex-wrap: wrap;
         }
     }
 
@@ -38,19 +47,19 @@
 .hero_title {
     font-family: var(--third-family);
     font-weight: 400;
-    font-size: clamp(37px, 4vw, 52px);
+    font-size: clamp(37px, 4vw, 72px);
     color: #fff;
-    max-width: 886px;
+    // max-width: clamp(886px);
     margin: 0;
 }
 
 .hero_text {
     font-family: var(--second-family);
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(18px, 1.8vw, 30px);
     line-height: 125%;
     color: #fff;
     display: block;
     margin: 0;
-    max-width: 1229px;
+    // max-width: 1229px;
 }

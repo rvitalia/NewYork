@@ -2,6 +2,10 @@
     width: 100%;
     max-width: var(--container-width);
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 70px;
+    
+    @media (max-width:1250px) {
+        padding: 0 30px;
+    }
 }
 

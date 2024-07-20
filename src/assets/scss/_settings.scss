@@ -57,6 +57,7 @@ a {
   border: 1px solid transparent;
   border-radius: 150px;
   text-transform: uppercase;
+  white-space: nowrap;
 
   &.colors {
     color: #000;
