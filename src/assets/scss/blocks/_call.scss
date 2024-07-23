@@ -49,6 +49,7 @@
 
             & .project_link {
                 white-space: nowrap;
+                z-index: 3;
 
                 &::after {
                     @include small-tablet {
@@ -139,6 +140,10 @@
     align-items: center;
     gap: 4px;
     position: relative;
+
+    & .project_share_mess, & .project_link {
+        z-index: 3;
+    }
 
     @media (max-width:500px) {
         flex-direction: column;

@@ -5,6 +5,10 @@
     position: relative;
     padding-bottom: clamp(10px, 3.5vw,  75px);
 
+    @include small-tablet{
+        background-position: 20%;
+    }
+    
 
     @include mobile{
         min-height: 974px;
